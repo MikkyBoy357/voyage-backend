@@ -15,7 +15,7 @@ server.use(cors({
 
 server.use(app);
 
-const mongoUri = `mongodb+srv://king:king@cluster0.k7g119p.mongodb.net/?retryWrites=true&w=majority`;
+const mongoUri = `mongodb+srv://king:king@cluster0.k7g119p.mongodb.net/voyage?retryWrites=true&w=majority`;
 
 mongoose.set("strictQuery", false);
 mongoose.connect(mongoUri).then(() => {
