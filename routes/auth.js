@@ -138,11 +138,12 @@ router.post('/login', async (req, res) => {
                         {
                             email: user[0].email,
                             userId: user[0]._id,
-                            type: user[0].type
+                            type: user[0].type,
+                            firstName: user[0].firstName,
                         },
                         process.env.JWT_KEY, // Use environment variable for the secret key
                         {
-                            expiresIn: "5h" // Token expiration time
+                            expiresIn: "10m" // Token expiration time
                         }
                     );
                     // Return a 200 OK status code with the token for successful authentication
