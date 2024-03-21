@@ -5,19 +5,19 @@ const touristSchema = new mongoose.Schema(
         _id: mongoose.Schema.Types.ObjectId,
         firstName: {
             type: String,
-            required: [true, "Please enter tourist first name"]
+            required: [true, "Prénom"]
         },
         lastName: {
             type: String,
-            required: [true, "Please enter tourist last name"]
+            required: [true, "Nom"]
         },
         email: {
             type: String,
-            required: [true, "Please enter tourist email"]
+            required: [true, "Entrez l’address email"]
         },
         phone: {
             type: String,
-            required: [true, "Please enter tourist phone number"]
+            required: [true, "Numero de téléphone"]
         },
         address: {
             type: String,

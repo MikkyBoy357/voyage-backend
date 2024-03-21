@@ -13,7 +13,7 @@ const permissionSchema = new mongoose.Schema(
                 validator: function (value) {
                     return validPermissionNames.includes(value);
                 },
-                message: 'Name is not correct'
+                message: 'Nom incorrect'//Name is not correct
             }
         },
         description: {
@@ -25,7 +25,7 @@ const permissionSchema = new mongoose.Schema(
                 validator: function (action) {
                     return validActions.includes(action);
                 },
-                message: 'At least one valid action is required: read, update, delete, create',
+                message: 'Une action au moins est requise : lecture, misajour, suppression, creation',//At least one valid action is required: read, update, delete, create
             },
         },
     },

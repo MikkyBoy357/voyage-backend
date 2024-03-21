@@ -3,21 +3,17 @@ const mongoose = require('mongoose')
 const agencySchema = new mongoose.Schema(
     {
         _id: mongoose.Schema.Types.ObjectId,
-        firstName: {
+        userName: {
             type: String,
-            required: [true, "Please enter agency first name"]
-        },
-        lastName: {
-            type: String,
-            required: [true, "Please enter agency last name"]
+            required: [true, "Nom de l’agence"]
         },
         email: {
             type: String,
-            required: [true, "Please enter agency email"]
+            required: [true, "Entrez l’address email"]
         },
         phone: {
             type: String,
-            required: [true, "Please enter agency phone number"]
+            required: [true, "Numero de téléphone"]
         },
         address: {
             type: String,
